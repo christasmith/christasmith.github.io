@@ -98,6 +98,15 @@ body {
         font-family: 'Julius Sans One', sans-serif;
         font-weight: bold;
     }
+
+    .sticky {
+    background-color: #444;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+
+    }
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -226,7 +235,7 @@ textarea {
       display: inline-flex;
   }
 
-  #section-a .content-title{
+  #section-b .content-title{
       margin-top: 10rem;
   }
 
@@ -246,7 +255,8 @@ textarea {
       height:20%;
   }
 
-  #section-c .contact-map{
+  #section-c .contact-details{
+    text-align: center;
     width:50%;
     height:20%;
   }
