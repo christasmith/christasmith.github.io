@@ -36,23 +36,24 @@ body {
 
   h1 {
    font-size: 4rem;
-   font-family: 'Alegreya Sans SC', sans-serif;
+   font-family: 'Libre Baskerville', serif;
   }
 
   h2 {
-      font-family: 'Alegreya Sans SC', sans-serif;
+      font-family: 'Julius Sans One', sans-serif;
       font-size: 2.5rem;
   }
 
   h3 {
-      /*font-family: 'Julius Sans One', sans-serif;*/
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 1.5rem;
     margin: 0;
     padding-top:0.5rem;
   }
 
   p {
-      font-family: 'Alegreya Sans SC', sans-serif;;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
       padding: 0;
       margin: 0;
   }
@@ -189,9 +190,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
   .main-site{
-      margin-right: 2rem;
-      margin-left: 2rem;
+      margin-right: 6rem;
+      margin-left: 6rem;
       margin-bottom: 1rem;
+  }
+
+  .content-title{
+      padding-top: 5rem;
   }
 
   #showcase {
@@ -207,12 +212,13 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 80%;
+  height: 83%;
   z-index: -1;
   opacity: 0.2;
 }
   #showcase .bg-title{
       margin-bottom: 0;
+      margin-top:4.5rem;
   }
   #showcase .bg-title-small{
     margin: 0;
@@ -224,7 +230,7 @@ textarea {
   }
 
   #showcase .bg-established{
-      font-family: 'Julius Sans One', sans-serif;
+      font-family: 'Alegreya Sans SC', sans-serif;;
       margin-top:4rem;
   }
 
@@ -232,62 +238,124 @@ textarea {
         display: inline-block;
         width:3rem;
     }
-  #section-a .content-text {
+  #section-b .content-text {
       display: inline-flex;
   }
 
-  #section-b .content-title{
-      margin-top: 7rem;
-  }
-
-  #section-a .tile {
+  #section-b .tile {
       width: 33.3%;
       margin-right: 1rem;
       /*filter: grayscale(100%);*/
-
   }
 
-  #section-c .contact {
+  #section-d .contact {
       display: inline-flex;
   }
 
-  #section-c .contact-map{
+  #section-d .contact-map{
       width:50%;
       height:20%;
   }
 
-  #section-c .contact-details{
-    text-align: center;
+  #section-d .contact-details{
     width:50%;
-    height:20%;
+    height:100%;
+    /*background-color: #3587A4;*/
+
   }
 
-  #section-d .recommendation-button {
+  #section-d .details{
+      text-align: right;
+      overflow-wrap: break-word;
+  }
+
+  .details-icon{
+      color: #ffffff;
+  }
+
+  #section-c .recommendation-button {
       color: #3587A4 ;
   }
-/*
- * Printing Tables:
- * http://css-discuss.incutio.com/wiki/Printing_Tables
- */
 
-    thead {
-        display: table-header-group;
+
+/* ==========================================================================
+  Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 1000px) {
+
+    .sticky {
+        display: none;
     }
 
-    tr,
-    img {
-        page-break-inside: avoid;
+    h2{
+        font-size: 1.5rem;
     }
 
-    p,
-    h2,
+    #section-b .tile {
+        width: 100%;
+        /*filter: grayscale(100%);*/
+    }
+
+    #section-b .content-text {
+        display: inline-block;
+    }
+
+    #section-b .tile{
+        margin-bottom: 3rem;
+
+    }
+
+    #section-d .contact-map{
+        width:100%;
+    }
+
+    #section-d .contact-details{
+        width:100%;
+    }
+    #section-d .contact{
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .main-site {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 0.2rem;    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .burger-nav .nav-item {
+        margin-left : 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .burger-nav .nav-item {
+        margin-left : 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .content-title{
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    h1{
+        font-size: 4rem;
+
+    }
     h3 {
-        orphans: 3;
-        widows: 3;
+        font-size: 1rem;
     }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-
+}

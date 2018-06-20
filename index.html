@@ -12,6 +12,8 @@
     <!-- Place favicon.ico in the root directory -->
   <link href="./assets/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Libre+Baskerville|Old+Standard+TT|Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -20,45 +22,59 @@
     <!-- Navagation Pane -->
   <nav class="sticky">
     <ul>
-        <li class="nav-item"> <i class="fas fa-home"></i> <a href="#section-a"> HOME</a> </li>
-        <li class="nav-item"> <i class="far fa-user"></i> <a href="#section-b"> ABOUT </a></li>
-        <li class="nav-item"> <i class="fas fa-wrench"></i> <a href="#section-a"> SERVICES</a></li>
-        <li class="nav-item"> <i class="fas fa-user-friends"></i><a href="#section-a"> RECOMMENDATIONS </a></li>
-        <li class="nav-item"> <i class="fas fa-address-book"></i><a href="#section-c"> CONTACT ME</a></li>
+        <li class="nav-item"> <i class="fas fa-home"></i> <a href="#showcase"> HOME</a> </li>
+        <li class="nav-item"> <i class="far fa-user"></i> <a href="#about"> ABOUT </a></li>
+        <li class="nav-item"> <i class="fas fa-wrench"></i> <a href="#section-b"> SERVICES</a></li>
+        <li class="nav-item"> <i class="fas fa-user-friends"></i><a href="#section-c"> RECOMMENDATIONS </a></li>
+        <li class="nav-item"> <i class="fas fa-address-book"></i><a href="#section-d"> CONTACT ME</a></li>
     </ul>
     </nav>
+
+    <nav class="burger-nav">
+        <ul>
+            <li class="nav-item"> <a href="#showcase"> <i class="fas fa-home"></i> </a> </li>
+            <li class="nav-item"> <a href="#about"> <i class="far fa-user"></i>  </a></li>
+            <li class="nav-item"> <a href="#section-b"> <i class="fas fa-wrench"></i></a></li>
+            <li class="nav-item"> <a href="#section-c"> <i class="fas fa-user-friends"></i> </a></li>
+            <li class="nav-item"> <a href="#section-d"> <i class="fas fa-address-book"></i> </a></li>
+        </ul>
+    </nav>
+
     <header id="showcase" class="grid">
          <div class="bg-image"></div>
          <div class="content-wrap">
              <h1 class="bg-title"> David Ashford </h1>
-             <h1 class="bg-title-small">  Piano Tuner </h1> <img class="logo" src="./img/piano.png"/>
+             <h1 class="bg-title-small">  Piano Tuner  </h1>
+             <img class="logo" src="./img/piano.png"/>
              <div class="bg-established">
                  <p> Established 1982 </p>
                  <p> Servicing Hampshire and surrounding areas</p>
              </div>
-             <a href="#section-b" class="btn">Read More</a>
+             <a href="#about" class="btn">Read More</a>
          </div>
      </header>
 
 
     <div class="main-site">
 
-    <section id="section-b">
+    <section id="section-a">
             <div>
-                <h2 class="content-title"> <i class="far fa-user"></i> About me </h2>
-                <p> I am a City and Guilds qualified Piano Tuner/Technician with a diploma in tuning, maintenance and repairs from Newark Technical College.After gaining valuable experience with Winchester’s own music shop, Whitwam’s music in 1982 as a piano tuner servicing new pianos, as well as a large clientele in the Winchester and wider Hampshire area, I establsihed my own tuning and repair business in 1984.</p>
+                <h2 id="about" class="content-title about"> <i class="far fa-user"></i> About me </h2>
+                <p>A City and Guilds qualified Piano Tuner/Technician with a diploma in tuning, maintenance and repairs from Newark Technical College.
+                   <br/> After gaining valuable experience servicing and tuning new pianos for an extensive clientele at Winchester's own music shop Whitwam’s music as well as in homes across the Hampshire area, I established my own tuning and repair business in 1984.
+                    As well as many domestic, home visit clients, I am pleased to be able to name several public schools, local schools and colleges, churches, theatres, Universities and a Cathedral as long standing clients.</p>
             </div>
     </section>
 
 
-    <section id="section-a">
+    <section id="section-b">
         <div class="content-wrap">
             <h2 class="content-title"> <i class="fas fa-wrench"></i> Services Provided</h2>
             <div class="content-text">
                 <div class="tile">
                 <img src="img/repairs.jpg" />
                 <h3>Tuning </h3>
-                <p> Utilizing the "traditional method” of tuning. This relies on pitching the notes by ear and gauging the playability by touch and feel. </p>
+                <p> Utilizing the 'traditional method' of tuning. This relies on pitching the notes by ear and gauging the playability by touch and feel. </p>
                 </div>
 
                 <div class="tile">
@@ -70,33 +86,32 @@
                 <div class="tile">
                 <img src="img/serv.jpg"/>
                 <h3> Repairs </h3>
-                <p> From sticking keys to a full restring, most repairs can be undertaken in situ. </p>
+                <p> Trained for 30+ years in repair and restoration, from fully rebuilding grand pianos to sticking broken keys and squeaky pedals. Repairs will need to be done by quotation and viewed by appointment.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section id="section-d">
+    <section id="section-c">
             <div>
-                <h2> <i class="fas fa-user-friends"></i> Recommendations </h2>
+                <h2 class="content-title"> <i class="fas fa-user-friends"></i> Recommendations </h2>
                 <p> Piano Lessons  - Winchester Music Lessons <a class="recommendation-button" href='https://winchestermusiclessons.com/' target="_blank"> <i class="fas fa-link"></i> </a></p>
                 <p> Piano Removals -  Winchester Piano Studios <a class="recommendation-button" href='http://www.winchesterpianostudios.com/' target="_blank"> <i class="fas fa-link"></i></a> </p>
             </div>
     </section>
 
-    <section id="section-c">
+    <section id="section-d">
         <h2 class="content-title"> <i class="far fa-user"></i> Contact me </h2>
 
         <div class="contact">
             <img class="contact-map" src="./img/hampshire.png"/>
             <div class="contact-details">
-
-            <!--<h3> David ashford</h3>-->
-            <!--<h3> <i class="fas fa-envelope"></i> DavidAshford@dapianotuning.com</h3>-->
-            <!--<h3> <i class="fab fa-facebook-square"></i> David Ashford </h3>-->
-
-
+                <div class="details">
+                    <h3> David Ashford</h3>
+                    <h3><i class="details-icon far fa-envelope"></i> david@dapianotuning.com</h3>
+                    <h3><i class="details-icon fas fa-phone"></i> 078319392 </h3>
+                </div>
             </div>
         </div>
     </section>
