@@ -236,7 +236,7 @@ textarea {
   }
 
   #section-b .content-title{
-      margin-top: 10rem;
+      margin-top: 8rem;
   }
 
   #section-a .tile {
@@ -261,8 +261,9 @@ textarea {
     height:20%;
   }
 
-
-
+  #section-d .recommendation-button {
+      color: #3587A4 ;
+  }
 /*
  * Printing Tables:
  * http://css-discuss.incutio.com/wiki/Printing_Tables
