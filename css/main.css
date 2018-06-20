@@ -49,8 +49,6 @@ body {
   }
 
   p {
-    margin: 0;
-    padding: 2em 0;
   }
 
   ul{
@@ -61,6 +59,11 @@ body {
 
   hr{
     width:80%;
+  }
+
+  a{
+      color: white;
+      text-decoration: none;
   }
 
   .btn {
@@ -163,6 +166,8 @@ textarea {
 
   nav ul li{
      display: inline;
+     margin-left: 4rem;
+     margin-right: 4rem;
    }
 
   #showcase {
@@ -189,7 +194,16 @@ textarea {
     padding:3rem;
   }
 
+  #section-a .content-text {
+      display: inline-flex;
+  }
 
+  #section-a .content-title{
+      margin-top: 6rem;
+  }
+  #section-a .tile {
+        width: 33.3%;
+    }
 
     /*
      * Printing Tables:
@@ -216,4 +230,4 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
-}
+
