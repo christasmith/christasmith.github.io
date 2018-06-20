@@ -331,6 +331,7 @@ textarea {
 
 @media screen and (max-width: 650px) {
 
+
     .burger-nav .nav-item {
         margin-left : 1.5rem;
         margin-right: 1.5rem;
@@ -340,10 +341,9 @@ textarea {
 
 @media screen and (max-width: 400px) {
 
-
     .burger-nav .nav-item {
-        margin-left : 1.5rem;
-        margin-right: 1.5rem;
+        margin-left : 0.8rem;
+        margin-right: 0.8rem;
     }
 
     .content-title{
@@ -352,7 +352,7 @@ textarea {
     }
 
     h1{
-        font-size: 4rem;
+        font-size: 2rem;
 
     }
     h3 {
