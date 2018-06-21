@@ -322,7 +322,9 @@ textarea {
 }
 
 @media screen and (max-width: 700px) {
-
+    .sticky {
+        display: none;
+    }
     .main-site {
         margin-right: 2rem;
         margin-left: 2rem;
@@ -330,7 +332,9 @@ textarea {
 }
 
 @media screen and (max-width: 650px) {
-
+    .sticky {
+        display: none;
+    }
 
     .burger-nav .nav-item {
         margin-left : 1.5rem;
